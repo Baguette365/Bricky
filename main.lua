@@ -6,7 +6,9 @@ please read README.md
 --]]
 
 function imports()
-    tick = require 'tick'
+    tick = require "src.packages.tick"
+    json = require "src.packages.json"
+    data = require "data"
 end
 
 
@@ -16,7 +18,11 @@ function love.load()
 end
 
 function love.update(dt)
-
+    if data.window and data.window.title then
+        love.window.setTitle(data.window.title)
+    else
+        love.window.setTitle(tostring(dt))
+    end
 end
 
 function love.draw()
