@@ -1,6 +1,6 @@
 --[[
 
-The basic brick that while make after all of the futur bricks of Bricky
+The basic brick that will make after all of the futur bricks of Bricky
 
 --]]
 
